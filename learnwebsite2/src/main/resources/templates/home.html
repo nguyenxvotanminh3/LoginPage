@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <style>
+table, th, td {
+  border: 20px solid black;
+}
+</style>
+</head>
+<body>
+
+<h1>Test 1 tí </h1>
+
+<table>
+    <tr>
+        <th>PRESS THIS TO LOGOUT</th>
+    </tr>
+    <tr>
+        <td><form th:action="@{/logout}" method="post">
+            <input value="Logout" type="submit"/>
+        </form></td>
+    </tr>
+</table>
+
+
+<table>
+    <tr>
+        <th>PRESS THIS TO GoHomePage</th>
+    </tr>
+    <tr>
+        <td><form th:action="@{http://localhost:4200/}" method="get">
+            <input value="Redirect" type="submit"/>
+        </form></td>
+    </tr>
+</table>
+
+</body>
+
+
+</html>
